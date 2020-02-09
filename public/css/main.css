@@ -1,0 +1,69 @@
+body{
+    font-family: Lato;
+    background: #fff;
+    font-size: 12px;
+}
+
+
+/* input group styles*/
+.input-group{
+    border-radius: 0;
+}
+.input-group .input-group-prepend span, .input-group input{
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    background: transparent;
+}
+.input-group .input-group-prepend span{
+    padding-left: 20px;
+}
+.input-group input{
+    padding: 26px 5px;
+    font-size: 13px;
+}
+.input-group input:focus{
+    box-shadow: none;
+}
+
+/* sidebar styles*/
+#sidebar-wrapper{
+    background: #354052!important;
+    color: #fff;
+}
+#sidebar-wrapper .list-group a{
+    background: #354052!important;
+    padding-left: 12px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 13px;
+    border-left: 5px solid transparent;
+}
+#sidebar-wrapper .list-group a span{
+    margin-right: 6px;
+}
+#sidebar-wrapper .list-group a:hover{
+    background: #242c3a!important;
+    color: #fff;
+    font-weight: 300;
+    font-size: 13px;
+    border-left: 5px solid #1f3f75;
+}
+#sidebar-wrapper .list-group a.router-link-active{
+    background: #242c3a!important;
+    color: #fff;
+    font-weight: 300;
+    font-size: 13px;
+    border-left: 5px solid #1f3f75;
+}
+.sidebar-heading{
+    font-weight: bolder;
+    font-size: 15px!important;
+    border-bottom: 1px solid #242c3a;
+}
+
+/*navbar styles*/
+.navbar{
+    border-bottom: 1px solid #e5e5e5;
+}
