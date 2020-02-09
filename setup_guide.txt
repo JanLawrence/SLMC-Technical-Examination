@@ -1,14 +1,22 @@
-1. Clone the repository https://github.com/JanLawrence/SLMC-Technical-Examination on your preferred folder.
-2. After cloning, go to the terminal and run "composer install" to install composer".
-3. Create a .env file to enable to run the project.
-4. Create a database on you localhost named "db_xyz" and update your db credentials based on your computer and db name (db_xyz).
+1. Clone the repositoy https://github.com/JanLawrence/SLMC-Technical-Examination.
+2. After cloning, go to the terminal and go to your folder and run "composer install" to install composer".
+3. Create a .env file on the created project folder (SLMC-Technical-Examination) and copy the codes on .env.example and run php artisan key:generate on terminal
+   to generate your app key.
+4. Create a database on your localhost named "db_xyz" and update your db credentials on your .env file based on your local db server and db name (db_xyz).
+	For default sample on .env file:
+		DB_CONNECTION=mysql
+		DB_HOST=127.0.0.1
+		DB_PORT=3306
+		DB_DATABASE=db_xyz
+		DB_USERNAME=root
+		DB_PASSWORD=
 5. Migrate the database by runing on terminal "php artisan migrate"
 6. You can now run the custom commands on running the XYZ API to pull data from JSONPlaceholder
-	Run commands on terminal:
+	Run commands on terminal by order:
+		php artisan users:fetch
 		php artisan posts:fetch
 		php artisan comments:fetch
 		php artisan albums:fetch
 		php artisan photos:fetch
 		php artisan todos:fetch
-		php artisan users:fetch
 7. Run on terminal "php artisan serve" to serve the server and by default you can now access http://localhost:8000/ on your web browser.	
